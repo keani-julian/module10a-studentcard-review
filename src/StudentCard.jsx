@@ -24,17 +24,18 @@ borderRadius: '12px',
 fontFamily: 'Arial, sans-serif',
 textAlign: 'center',
 margin: '20px auto',
-backgroundColor: '#f9f9f9',
+backgroundColor: '#b3b3b3',
 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
 }}>
 <img
 src={imageUrl}
 // Profile image styling: size, circular shape, object fit, and spacing.
+// Name and major/year styling: spacing and font sizes
+// Toggle button changes based on bio visibility
 alt={name + "'s profile"}
 style={{ width: '100px', height: '100px', borderRadius: '50%',
 objectFit: 'cover', marginBottom: '12px' }}
 />
-// Name and major/year styling: spacing and font sizes
 <h2 style={{ margin: '0', fontSize: '22px' }}>{name}</h2>
 <p style={{ margin: '4px 0', fontSize: '16px' }}>{major} –
 {year}</p>
@@ -48,7 +49,6 @@ cursor: 'pointer',
 backgroundColor: '#007BFF',
 color: 'white'
 }}>
-// Toggle button changes based on bio visibility
 {showBio ? 'Hide Bio' : 'Show Bio'}
 </button>
 {showBio && <p style={{ marginTop: '16px', fontSize: '14px'
